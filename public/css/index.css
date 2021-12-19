@@ -1,0 +1,84 @@
+:root {
+  --bg-color: white;
+} 
+
+body {
+  margin: 0 0;
+}
+
+h2,
+h4 {
+  font-weight: bold;
+}
+
+h3,
+h5 {
+  text-align: center;
+}
+
+img {
+  background: white;
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+  margin: 10px auto;
+  border: solid black 2px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#home {
+  background: rgb(0, 0, 0);
+  padding: 15vh;
+  height: 650px;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+
+#home h1 {
+  position: relative;
+  width: max-content;
+}
+
+#home h1::before {
+  position: absolute;
+  background: var(--bg-color);
+  content: "";
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  animation: textReveal 2s steps(22) forwards;
+}
+
+#home p {
+  position: relative;
+  width: max-content;
+}
+
+#home p::before {
+  position: absolute;
+  background: var(--bg-color);
+  content: "";
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  animation: textReveal 2s steps(22) 2s forwards;
+}
+
+@keyframes textReveal {
+  to {
+    left:100%;
+  }
+}
+
+.row {
+  background: rgb(39, 130, 248);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-shadow: -1px 0px 5px 3px rgba(0, 0, 0, 0.62);
+}
