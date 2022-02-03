@@ -1,6 +1,6 @@
 :root {
   --bg-color: white;
-} 
+}
 
 body {
   margin: 0 0;
@@ -28,11 +28,11 @@ img {
 }
 
 #home {
-  background: rgb(0, 0, 0);
+  background: black;
   padding: 15vh;
-  height: 650px;
+  height: 100vh;
   text-align: center;
-  font-size: 2em;
+  font-size: 2rem;
   color: white;
 }
 
@@ -45,32 +45,41 @@ img {
   position: absolute;
   background: var(--bg-color);
   content: "";
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   animation: textReveal 2s steps(22) forwards;
 }
 
 #home p {
   position: relative;
   width: max-content;
+  margin-left: 2rem;
 }
 
 #home p::before {
   position: absolute;
   background: var(--bg-color);
   content: "";
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   animation: textReveal 2s steps(22) 2s forwards;
+}
+
+.project-list {
+  margin: 0 0 0 4rem;
+}
+
+#Skills p {
+  margin-left: 1rem;
 }
 
 @keyframes textReveal {
   to {
-    left:100%;
+    left: 100%;
   }
 }
 
